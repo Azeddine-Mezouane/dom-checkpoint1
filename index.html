@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              costum: ["magica"],
+              Poppins: ["Poppins"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Oaken-card</title>
+  </head>
+  <body>
+    <!-- <div class="!z-0   w-[100%] absolute top-0  h-[400px]  bg-[#FFF0E3] opacity-80 "></div> -->
+
+    <nav class="!z-1 flex items-center py-7 justify-around bg-[#FFF0E3]">
+      <div class="logo">
+        <img class="w-[50%]" src="Assets/images/logo.png" alt="" />
+      </div>
+      <div>
+        <ul class="flex gap-7 max-md:hidden font-Poppins font-light">
+          <li class="font-medium">Accueil</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="absolute md:hidden right-10">
+        <img src="Assets/images/menu.svg" alt="" />
+      </div>
+    </nav>
+
+    <!----------------------------------------- hero -------------------------------------------->
+
+    <div
+      class="md:px-10 px-5 z-1 !z-0 w-[100%] relative h-[10vw] bg-[#FFF0E3]"
+    >
+      <div class=" absolute -bottom-[5vw] md:left-[70px]">
+        <h1 class="font-costum md:text-[8vw] text-[10vw]  text-[#D3A57D] ">Check Out</h1>
+      </div>
+    </div>
+
+   
+    <!-- f -->
+    <!-- Contenu du panier -->
+     
+    <section
+      class="max-w-3xl bg-beige md:p-6 mt-24  max-md:mt-9 overflow-hidden max-md:rounded-[10px] rounded-[20px] max-md:w-[90vw] md:max-w-[50vw] mx-auto my-[5vw] font-poppins bg-[#F2E1D2]"
+    >
+    <div class="p-8">
+      <h2
+        class="font-costum md:text-[30px] text-[20px] font-bold text-[#584129] mb-8"
+      >
+        Votre Panier
+      </h2>
+
+    
+      <!-- Produit : Baskets -->
+      <div
+        class="cart-item flex items-center justify-between border-b pb-4 mb-4"
+        data-price="50"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            src="Assets/img/baskets2.png"
+            alt="Baskets"
+            class="w-16 h-16 object-cover"
+          />
+          <div>
+            <h2 class="font-semibold text-lg">Baskets</h2>
+            <p class="text-sm text-darkGold">
+              Des baskets confortables pour vos journées actives.
+            </p>
+          </div>
+        </div>
+        <div class="actions flex items-center gap-4">
+          <div class="quantity-controls flex items-center gap-2">
+            <button
+              class="decrease font-bold text-black px-3 py-1 rounded hover:bg-darkGold"
+            >
+              -
+            </button>
+            <span class="quantity font-medium text-lg">1</span>
+            <button
+              class="increase font-bold text-black px-3 py-1 rounded hover:bg-darkGold"
+            >
+              +
+            </button>
+          </div>
+         
+          <i class='bx bxs-heart heart cursor-pointer text-3xl  grayscale hover:grayscale-[30%] text-red-500 transition transform hover:scale-125'></i>
+          <img
+            src="Assets/img/delete.png"
+            alt="Supprimer"
+            class="delete-icon w-6 h-6 cursor-pointer"
+          />
+        </div>
+      </div>
+
+      <!-- Produit : Chaussettes -->
+      <div
+        class="cart-item flex items-center justify-between border-b pb-4 mb-4"
+        data-price="10"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            src="Assets/img/socks2.png"
+            alt="Chaussettes"
+            class="w-16 h-16 object-cover"
+          />
+          <div>
+            <h2 class="font-semibold text-lg">Chaussettes</h2>
+            <p class="text-sm text-darkGold">
+              Des chaussettes chaudes et élégantes.
+            </p>
+          </div>
+        </div>
+        <div class="actions flex items-center gap-4">
+          <div class="quantity-controls flex items-center gap-2">
+            <button
+              class="decrease font-bold text-black px-3 py-1 rounded hover:bg-darkGold"
+            >
+              -
+            </button>
+            <span class="quantity font-medium text-lg">1</span>
+            <button
+              class="increase font-bold text-black px-3 py-1 rounded hover:bg-darkGold"
+            >
+              +
+            </button>
+          </div>
+          <i class='bx bxs-heart heart cursor-pointer text-3xl  grayscale hover:grayscale-[30%] text-red-500 transition transform hover:scale-125'></i>
+
+          <img
+            src="Assets/img/delete.png"
+            alt="Supprimer"
+            class="delete-icon w-6 h-6 cursor-pointer"
+          />
+        </div>
+      </div>
+
+      <!-- Produit : Sac -->
+      <div
+        class="cart-item flex items-center justify-between border-b pb-4 mb-4"
+        data-price="100"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            src="Assets/img/bag2.png"
+            alt="Sac"
+            class="w-16 h-16 object-cover"
+          />
+          <div>
+            <h2 class="font-semibold text-lg">Sac</h2>
+            <p class="text-sm text-darkGold">
+              Un sac élégant et pratique pour toutes les occasions.
+            </p>
+          </div>
+        </div>
+        <div class="actions flex items-center gap-4">
+          <div class="quantity-controls flex items-center gap-2">
+            <button
+              class="decrease font-bold text-black px-3 py-1 rounded hover:bg-darkGold"
+            >
+              -
+            </button>
+            <span class="quantity font-medium text-lg">1</span>
+            <button
+              class="increase font-bold text-black px-3 py-1 rounded hover:bg-darkGold"
+            >
+              +
+            </button>
+          </div>
+          <i class='bx bxs-heart heart cursor-pointer text-3xl  grayscale hover:grayscale-[30%] text-red-500 transition transform hover:scale-125'></i>
+
+          <img
+            src="Assets/img/delete.png"
+            alt="Supprimer"
+            class="delete-icon w-6 h-6 cursor-pointer"
+          />
+        </div>
+      </div>
+      <!-- Total -->
+      <div class="text-center mt-6">
+        <p class="text-xl font-semibold">
+          Total : <span id="total" class="text-gold">160</span> €
+        </p>
+      </div>
+    </section>
+
+   
+    <!----------------------------------------- footer ------------------------------------------>
+
+    <footer class="h-[50px] bg-[#D3A57D] flex justify-center items-center">
+      <p class="text-[#584129] font-Poppins font-medium max-md:text-[13px]">
+        Azeddine Mezouane 2024 &copy; Tous droits réservés.
+      </p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

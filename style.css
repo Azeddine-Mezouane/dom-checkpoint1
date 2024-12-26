@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* box-shadow: 0 0 0 3px red inset; */
+}
+/* input.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "pop";
+  src: url("../public/assets/pop.ttf");
+}
+@font-face {
+  font-family: "glory";
+  src: url("../public/assets/glory.ttf");
+}
+
+@font-face {
+  font-family: "magica";
+  src: url("Assets/font/Magica.otf");
+}
