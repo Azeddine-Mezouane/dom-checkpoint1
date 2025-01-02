@@ -13,7 +13,6 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -56,163 +55,116 @@
 
     <!----------------------------------------- hero -------------------------------------------->
 
-    <div
-      class="md:px-10 px-5 z-1 !z-0 w-[100%] relative h-[10vw] bg-[#FFF0E3]"
-    >
-      <div class=" absolute -bottom-[5vw] md:left-[70px]">
-        <h1 class="font-costum md:text-[8vw] text-[10vw]  text-[#D3A57D] ">Check Out</h1>
+    <div class="md:px-10 px-5 z-1 !z-0 w-[100%] relative h-[10vw] bg-[#FFF0E3]">
+      <div class="absolute -bottom-[5vw] md:left-[70px]">
+        <h1 class="font-costum md:text-[8vw] text-[10vw] text-[#D3A57D]">
+          Check Out
+        </h1>
       </div>
     </div>
 
-   
-    <!-- f -->
-    <!-- Contenu du panier -->
-     
-    <section
-      class="max-w-3xl bg-beige md:p-6 mt-24  max-md:mt-9 overflow-hidden max-md:rounded-[10px] rounded-[20px] max-md:w-[90vw] md:max-w-[50vw] mx-auto my-[5vw] font-poppins bg-[#F2E1D2]"
-    >
-    <div class="p-8">
-      <h2
-        class="font-costum md:text-[30px] text-[20px] font-bold text-[#584129] mb-8"
-      >
-        Votre Panier
-      </h2>
-
-    
-      <!-- Produit : Baskets -->
+    <!-- Produits (exemple) -->
+    <div class="flex justify-around mt-20 flex-wrap">
       <div
-        class="cart-item flex items-center justify-between border-b pb-4 mb-4"
-        data-price="50"
+        class="bg-[#F2E1D2] w-[300px] rounded-[20px] h-[410px] relative p-4 shadow-l"
+        data-name="Baskets"
+        data-image="Assets/img/baskets.png"
+        data-price="250"
+        data-description="Des baskets confortables pour tous les jours"
       >
-        <div class="flex items-center gap-4">
-          <img
-            src="Assets/img/baskets2.png"
-            alt="Baskets"
-            class="w-16 h-16 object-cover"
-          />
-          <div>
-            <h2 class="font-semibold text-lg">Baskets</h2>
-            <p class="text-sm text-darkGold">
-              Des baskets confortables pour vos journées actives.
-            </p>
-          </div>
-        </div>
-        <div class="actions flex items-center gap-4">
-          <div class="quantity-controls flex items-center gap-2">
-            <button
-              class="decrease font-bold text-black px-3 py-1 rounded hover:bg-darkGold"
-            >
-              -
-            </button>
-            <span class="quantity font-medium text-lg">1</span>
-            <button
-              class="increase font-bold text-black px-3 py-1 rounded hover:bg-darkGold"
-            >
-              +
-            </button>
-          </div>
-         
-          <i class='bx bxs-heart heart cursor-pointer text-3xl  grayscale hover:grayscale-[30%] text-red-500 transition transform hover:scale-125'></i>
-          <img
-            src="Assets/img/delete.png"
-            alt="Supprimer"
-            class="delete-icon w-6 h-6 cursor-pointer"
-          />
-        </div>
-      </div>
-
-      <!-- Produit : Chaussettes -->
-      <div
-        class="cart-item flex items-center justify-between border-b pb-4 mb-4"
-        data-price="10"
-      >
-        <div class="flex items-center gap-4">
-          <img
-            src="Assets/img/socks2.png"
-            alt="Chaussettes"
-            class="w-16 h-16 object-cover"
-          />
-          <div>
-            <h2 class="font-semibold text-lg">Chaussettes</h2>
-            <p class="text-sm text-darkGold">
-              Des chaussettes chaudes et élégantes.
-            </p>
-          </div>
-        </div>
-        <div class="actions flex items-center gap-4">
-          <div class="quantity-controls flex items-center gap-2">
-            <button
-              class="decrease font-bold text-black px-3 py-1 rounded hover:bg-darkGold"
-            >
-              -
-            </button>
-            <span class="quantity font-medium text-lg">1</span>
-            <button
-              class="increase font-bold text-black px-3 py-1 rounded hover:bg-darkGold"
-            >
-              +
-            </button>
-          </div>
-          <i class='bx bxs-heart heart cursor-pointer text-3xl  grayscale hover:grayscale-[30%] text-red-500 transition transform hover:scale-125'></i>
-
-          <img
-            src="Assets/img/delete.png"
-            alt="Supprimer"
-            class="delete-icon w-6 h-6 cursor-pointer"
-          />
-        </div>
-      </div>
-
-      <!-- Produit : Sac -->
-      <div
-        class="cart-item flex items-center justify-between border-b pb-4 mb-4"
-        data-price="100"
-      >
-        <div class="flex items-center gap-4">
-          <img
-            src="Assets/img/bag2.png"
-            alt="Sac"
-            class="w-16 h-16 object-cover"
-          />
-          <div>
-            <h2 class="font-semibold text-lg">Sac</h2>
-            <p class="text-sm text-darkGold">
-              Un sac élégant et pratique pour toutes les occasions.
-            </p>
-          </div>
-        </div>
-        <div class="actions flex items-center gap-4">
-          <div class="quantity-controls flex items-center gap-2">
-            <button
-              class="decrease font-bold text-black px-3 py-1 rounded hover:bg-darkGold"
-            >
-              -
-            </button>
-            <span class="quantity font-medium text-lg">1</span>
-            <button
-              class="increase font-bold text-black px-3 py-1 rounded hover:bg-darkGold"
-            >
-              +
-            </button>
-          </div>
-          <i class='bx bxs-heart heart cursor-pointer text-3xl  grayscale hover:grayscale-[30%] text-red-500 transition transform hover:scale-125'></i>
-
-          <img
-            src="Assets/img/delete.png"
-            alt="Supprimer"
-            class="delete-icon w-6 h-6 cursor-pointer"
-          />
-        </div>
-      </div>
-      <!-- Total -->
-      <div class="text-center mt-6">
-        <p class="text-xl font-semibold">
-          Total : <span id="total" class="text-gold">160</span> €
+        <img
+          src="Assets/img/baskets.png"
+          class="w-auto h-[200px] mx-auto mb-4"
+          alt="baskets"a
+        />
+        <h2 class="text-[#584129] text-[25px] font-medium font-costum mb-2">
+          Baskets
+        </h2>
+        <p class="text-darkGold text-[16px] mb-4">
+          Des baskets confortables
         </p>
+        <p class="text-xl font-semibold absolute bottom-18 left-4"> Prix: 250€</p>
+        <button
+          class="buy-button bg-[#D3A57D] absolute bottom-4 left-0 right-0 mx-auto w-[90%] py-2 rounded-lg text-[#F2E1D2] font-medium hover:bg-[#584129] transition-colors"
+        >
+          Acheter
+        </button>
+      </div>
+
+      <div
+        class="bg-[#F2E1D2] w-[300px] rounded-[20px] h-[410px] relative p-4 shadow-l"
+        data-name="Chaussettes"
+        data-image="Assets/img/socks.png"
+        data-price="10"
+        data-description="Chaussettes confortables et élégantes"
+      >
+        <img
+          src="Assets/img/socks.png"
+          class="w-auto h-[200px] mx-auto mb-4"
+          alt="socks"
+        />
+        <h2 class="text-[#584129] text-[25px] font-medium font-costum mb-2">
+          Chaussettes
+        </h2>
+        <p class="text-darkGold text-[16px] mb-4">
+          Chaussettes confortables et élégantes
+        </p>
+        <p class="text-xl font-semibold absolute bottom-18 left-4">Prix: 10€</p>
+        <button
+          class="buy-button bg-[#D3A57D] absolute bottom-4 left-0 right-0 mx-auto w-[90%] py-2 rounded-lg text-[#F2E1D2] font-medium hover:bg-[#584129] transition-colors"
+        >
+          Acheter
+        </button>
+      </div>
+
+      <div
+        class="bg-[#F2E1D2] w-[300px] rounded-[20px] h-[410px] relative p-4 shadow-l"
+        data-name="Sac"
+        data-image="Assets/img/bag.png"
+        data-price="100"
+        data-description="Un sac pratique et élégant"
+      >
+        <img
+          src="Assets/img/bag.png"
+          class="w-auto h-[200px] mx-auto mb-4"
+          alt="bag"
+        />
+        <h2 class="text-[#584129] text-[25px] font-medium font-costum mb-2">
+          Sac
+        </h2>
+        <p class="text-darkGold text-[16px] mb-4">Un sac pratique et élégant</p>
+        <p class="text-xl font-semibold absolute bottom-18 left-4 ">Prix: 100€</p>
+        <button
+          class="buy-button bg-[#D3A57D] absolute bottom-4 left-0 right-0 mx-auto  w-[90%] py-2 rounded-lg text-[#F2E1D2] font-medium hover:bg-[#584129] transition-colors"
+        >
+          Acheter
+        </button>
+      </div>
+    </div>
+
+    <!-- Contenu du panier -->
+
+    <section
+      class="max-w-3xl bg-beige md:p-6 mt-24 max-md:mt-9 overflow-hidden max-md:rounded-[10px] rounded-[20px] max-md:w-[90vw] md:max-w-[50vw] mx-auto my-[5vw] font-poppins bg-[#F2E1D2]"
+    >
+      <div class="p-8">
+        <h2
+          class="font-costum md:text-[30px] text-[20px] font-bold text-[#584129] mb-8"
+        >
+          Votre Panier
+        </h2>
+
+        <div id="cart-items-container">
+          <!-- Les éléments du panier seront ajoutés ici -->
+        </div>
+        <!-- Total -->
+        <div class="text-center mt-6">
+          <p class="text-xl font-semibold">
+            Total : <span id="total" class="text-gold">0</span> €
+          </p>
+        </div>
       </div>
     </section>
-
-   
     <!----------------------------------------- footer ------------------------------------------>
 
     <footer class="h-[50px] bg-[#D3A57D] flex justify-center items-center">
